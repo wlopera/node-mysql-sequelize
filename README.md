@@ -120,10 +120,13 @@ exports.postAddProduct = (req, res, next) => {
 };
 ```
 ## Salida 
-<img src="https://user-images.githubusercontent.com/7141537/211071467-16a7686d-6980-4945-971d-c51057e3fa20.PNG" height="600" width="800" />
+<img src="https://user-images.githubusercontent.com/7141537/211071467-16a7686d-6980-4945-971d-c51057e3fa20.PNG" height="800" width="800" />
 
-<img src="https://user-images.githubusercontent.com/7141537/211071470-1dda6e37-7ac8-412a-9b97-b5e8faa593f8.PNG" height="600" width="800" />
-<img src="https://user-images.githubusercontent.com/7141537/211071471-01b64713-13f6-4b1d-9868-a3a3d047b1f0.PNG" height="600" width="800" />
+![Captura](https://user-images.githubusercontent.com/7141537/211071470-1dda6e37-7ac8-412a-9b97-b5e8faa593f8.PNG)
+
+![Captura](https://user-images.githubusercontent.com/7141537/211071471-01b64713-13f6-4b1d-9868-a3a3d047b1f0.PNG)
+
+![Captura](https://user-images.githubusercontent.com/7141537/211072419-cbb0f82e-eea5-4320-913a-d7534e60fc1e.PNG)
 
 
 

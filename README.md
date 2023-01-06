@@ -119,4 +119,12 @@ exports.postAddProduct = (req, res, next) => {
     .catch((err) => console.log("Error al agregar producto:", err));
 };
 ```
+## Salida 
+<img src="https://user-images.githubusercontent.com/7141537/211071467-16a7686d-6980-4945-971d-c51057e3fa20.PNG" height="600" width="800" />
+
+<img src="https://user-images.githubusercontent.com/7141537/211071470-1dda6e37-7ac8-412a-9b97-b5e8faa593f8.PNG" height="600" width="800" />
+<img src="https://user-images.githubusercontent.com/7141537/211071471-01b64713-13f6-4b1d-9868-a3a3d047b1f0.PNG" height="600" width="800" />
+
+
+
 ---------------------------------------------------------------------------------------------

@@ -1,8 +1,9 @@
 # node-mysql-sequelize
 NodeJS Uso de Base de datos -MySQL y Sequelize
 
-
-### node-mysql-sequelize\package.json
+## NODEJS - MYSQL
+---------------------------------------------------------------------------------------------
+### package.json
 ```
 {
   "name": "node-mysql",
@@ -30,7 +31,7 @@ NodeJS Uso de Base de datos -MySQL y Sequelize
 }
 ```
 
-### node-mysql-sequelize\index.js
+### index.js
 ```
 const express = require("express");
 const path = require("path");
@@ -51,7 +52,7 @@ app.listen(3000, () => {
 });
 ```
 
-### node-mysql-sequelize\routes\products.js
+### routes\products.js
 ```
 const express = require("express");
 const router = express.Router();
@@ -64,7 +65,7 @@ module.exports = router;
 
 ```
 
-### node-mysql-sequelize\models\products.js
+### models\products.js
 ```
 const db = require("../util/database");
 
@@ -90,7 +91,7 @@ module.exports = class Product {
 
 ```
 
-### node-mysql-sequelize\controller\products.js
+### controller\products.js
 ```
 const Product = require("../models/products");
 
@@ -118,3 +119,4 @@ exports.postAddProduct = (req, res, next) => {
     .catch((err) => console.log("Error al agregar producto:", err));
 };
 ```
+---------------------------------------------------------------------------------------------

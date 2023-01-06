@@ -127,6 +127,16 @@ exports.postAddProduct = (req, res, next) => {
 ![Captura](https://user-images.githubusercontent.com/7141537/211071471-01b64713-13f6-4b1d-9868-a3a3d047b1f0.PNG)
 
 ![Captura](https://user-images.githubusercontent.com/7141537/211072419-cbb0f82e-eea5-4320-913a-d7534e60fc1e.PNG)
+---------------------------------
+``` request: 
+{
+    "title": "Java WEB",
+    "price": 18.75,
+    "description": "Java WEb 2023",
+    "imageUrl": "imagenJava"
+}
+```
+---------------------------------
 
 ## Anexo
 

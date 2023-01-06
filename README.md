@@ -128,6 +128,19 @@ exports.postAddProduct = (req, res, next) => {
 
 ![Captura](https://user-images.githubusercontent.com/7141537/211072419-cbb0f82e-eea5-4320-913a-d7534e60fc1e.PNG)
 
+## Anexo
 
+### Query.sql
+```
+CREATE TABLE `products` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `price` double NOT NULL,
+  `description` text NOT NULL,
+  `imageUrl` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+```
 
 ---------------------------------------------------------------------------------------------

@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 
 const productRoutes = require("./routes/products");
 //const db = require("./util/database");
+const sequelize = require("./util/database");
 
 const app = express();
 
@@ -28,6 +29,14 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(productRoutes);
 
-app.listen(3000, () => {
-  console.log("La Aplicación está funcionando en el puerto 3000");
-});
+sequelize
+  .sync()
+  .then((result) => {
+    // console.log("Respuesta de Sequealize:", result);
+    app.listen(3000, () => {
+      console.log("La Aplicación está funcionando en el puerto 3000");
+    });
+  })
+  .catch((err) => {
+    console.log("Error Sequealize:", err);
+  });

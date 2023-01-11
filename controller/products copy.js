@@ -1,10 +1,10 @@
 const Product = require("../models/products");
 
 exports.getIndex = (req, res, next) => {
-  Product.findAll()
-    .then((products) => {
-      console.log("Resultados:", products);
-      res.status(200).json(products);
+  Product.fetchAll()
+    .then(([rows, fieldData]) => {
+      console.log("Resultados:", rows);
+      res.status(200).json(rows);
     })
     .catch((err) => console.log("Error consultando productos:", err));
 };
@@ -15,12 +15,11 @@ exports.postAddProduct = (req, res, next) => {
   const description = req.body.description;
   const imageUrl = req.body.imageUrl;
 
-  Product.create({
-    title,
-    price,
-    description,
-    imageUrl,
-  })
-    .then((result) => console.log("Crear producto:", result))
-    .catch((err) => console.log("Error agregando producto:", err));
+  const product = new Product(null, title, price, description, imageUrl);
+  product
+    .save()
+    .then(() => {
+      this.getIndex(req, res, next);
+    })
+    .catch((err) => console.log("Error al agregar producto:", err));
 };
